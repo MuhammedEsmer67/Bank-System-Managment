@@ -40,9 +40,9 @@ The system simulates core real-world banking operations including account manage
 ## Project Structure
 
 ```
-📁 Bank-System-Management/
-├── 📄 Project 3 Bank System v2.sln
-├── 📁 Project 3 Bank System v2/
+📁 BankManagementSystem/
+├── 📄 BankManagementSystem.sln
+├── 📁 BankManagementSystem/
 │   ├── 📁 Header Files/
 │   │   ├── 📁 Core/
 │   │   │   ├── clsClient.h
@@ -56,12 +56,40 @@ The system simulates core real-world banking operations including account manage
 │   │   │   ├── clsString.h
 │   │   │   └── clsUtility.h
 │   │   ├── 📁 Screens/
-│   │   │   ├── Main Menu/
+│   │   │   ├── clsScreen.h
 │   │   │   ├── clsLoginScreen.h
 │   │   │   ├── clsMainScreen.h
-│   │   │   └── clsScreen.h
+│   │   │   └── 📁 Main Menu/
+│   │   │       ├── 📁 Currency Exchange/
+│   │   │       │   ├── clsCurrencyCalculatorScreen.h
+│   │   │       │   ├── clsCurrencyExchangeScreen.h
+│   │   │       │   ├── clsFindCurrencyScreen.h
+│   │   │       │   ├── clsListCurrencies.h
+│   │   │       │   └── clsUpdateRateScreen.h
+│   │   │       ├── 📁 Manage Clients/
+│   │   │       │   ├── clsAddNewClientScreen.h
+│   │   │       │   ├── clsClientListScreen.h
+│   │   │       │   ├── clsDeleteClientScreen.h
+│   │   │       │   ├── clsFindClientScreen.h
+│   │   │       │   ├── clsLoginRegisterScreen.h
+│   │   │       │   └── clsUpdateClientScreen.h
+│   │   │       ├── 📁 Manage Users/
+│   │   │       │   ├── clsAddNewUserScreen.h
+│   │   │       │   ├── clsDeleteUserScreen.h
+│   │   │       │   ├── clsFindUserScreen.h
+│   │   │       │   ├── clsManageUsersScreen.h
+│   │   │       │   ├── clsShowUserListScreen.h
+│   │   │       │   └── clsUpdateUserScreen.h
+│   │   │       └── 📁 Transactions/
+│   │   │           ├── clsDepositScreen.h
+│   │   │           ├── clsTotalBalancesScreen.h
+│   │   │           ├── clsTransactionsScreen.h
+│   │   │           ├── clsTransferLogScreen.h
+│   │   │           ├── clsTransferScreen.h
+│   │   │           └── clsWithdrawScreen.h
 │   │   └── GlobalUser.h
 │   └── 📁 Source Files/
+│       └── BankManagementSystem.cpp
 ```
 
 ---
@@ -69,6 +97,6 @@ The system simulates core real-world banking operations including account manage
 ## Getting Started
 
 1. Clone the repository
-2. Open `Project 3 Bank System v2.sln` in Visual Studio 2022
+2. Open `BankManagementSystem.sln` in Visual Studio 2022
 3. Build the solution (Ctrl + Shift + B)
 4. Run the project (F5)
